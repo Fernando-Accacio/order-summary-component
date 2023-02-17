@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+:root {
+    --pale-blue: #e0e8ff;
+    --bright-blue: #3829e0;
+    --very-pale-blue: #f5f7ff;
+    --desaturated-blue: #7280a7;
+    --dark-blue: #1f2f56;
+    --purple: #766CF1;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background: var(--pale-blue) url('../../images/pattern-background-mobile.svg') no-repeat;
+    background-size: 100%;
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+section {
+    min-width: 32.7rem;
+    max-width: 45rem;
+    background-color: #ffff;
+    border-radius: 2rem;
+    padding-bottom: 3.2rem ;
+
+}
+
+section > figure img {
+    width: 100%;
+    border-radius: 2rem 2rem 0 0;
+}
+
+.informations {
+    padding: 3.2rem;
+}
+
+.descriptions h1 {
+    font-size: 2.2rem;
+    font-weight: 900;
+    margin-bottom: 1.6rem;
+    color: var(--dark-blue);
+}
+
+.descriptions {
+    text-align: center;
+}
+
+.descriptions p {
+    font-size: 1.5rem;
+    color: var(--desaturated-blue);
+    line-height: 2.5rem;
+    font-weight: 500;
+}
+
+.plan{
+    background: var(--very-pale-blue);
+    border-radius: 1.2rem;
+    margin-top: 2.4rem;
+    padding: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.plan-type{
+    display: flex;
+    align-items: center;
+}
+
+.plan-type img {
+    width: 4.8rem;
+    margin-right: 2rem;   
+}
+
+.plan-type strong {
+    font-weight: 900;
+    font-size: 1.4rem;
+    color:  var(--dark-blue);
+
+}
+
+.plan-type p {
+    font-size: 1.4rem;
+    color: var(--desaturated-blue);
+
+}
+
+.plan-change a {
+    font-weight: 700;
+    color: var(--bright-blue);
+    font-size: 1.4rem;
+}
+
+.payment {
+    margin-top: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.payment a {
+    font-weight: 900;
+    color: var(--desaturated-blue);
+    font-size: 1.4rem;
+    text-decoration: none;
+    margin-top: 2.4rem;
+    cursor: pointer;
+}
+
+.payment button {
+    border-radius: 1.2rem;
+    width: 100%;
+    padding: 1.5rem 6.4rem;
+    font-family: 'Red Hat Display';
+    font-weight: 900;
+    background-color: var(--bright-blue);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+
+    @media (min-width: 1024px) {
+        body{
+            background: var(--pale-blue) url(../../images/pattern-background-desktop.svg) no-repeat;
+        }
+        
+        .informations {
+            padding: 4.8rem;
+        }
+        
+        .descriptions h1 {
+            font-size: 2.8rem;
+        }
+        .descripions p {
+            font-size: 1.6rem;
+        }
+        
+        .plan {
+            padding: 2.4rem;
+
+        }
+        .plan-type p, strong {
+            font-size: 1.6rem;
+        }
+
+        .plan-change a:hover {
+            text-decoration: none;
+            color: var(--purple);
+        }
+
+        .payment button:hover{
+            background: var(--purple);
+
+
+        }
+        .payment a:hover {
+            color: var(--dark-blue);
+        }
+    }
